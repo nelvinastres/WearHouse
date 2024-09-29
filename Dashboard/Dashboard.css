@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 239, 238);
+    font-family: Nunito;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 10px;
+}
+
+header .menu {
+    display: flex;
+    width: 95%;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .left a, .menu .right span {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+a.Logout {
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 70px 10px 10px;
+    float: right;
+    background-color: white;
+    margin-right: 20px;
+    display: none;
+}
+
+.menu .left a:hover, a.Logout:hover, .menu .right span {
+    color: black;
+}
+
+.burger {
+    position: fixed;
+    left: 93%;
+    top: 2%;
+    display: none;
+}
+
+.burger .line {
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+/*  */
+
+.dashboard {
+    width: 80%;
+    height: 120px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.dashboard .title {
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    background-color: rgb(204, 231, 227);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.dashboard .desc {
+    padding: 20px 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    margin-top: 27%;
+}
+
+footer .sosmed {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .sosmed a {
+    padding: 0px 5px;
+}
+
+footer .sosmed a img.twitter, a img.insta {
+    width: 16px;
+}
+
+a img.facebook {
+    width: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .burger {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .menu {
+        flex-direction: column;
+        align-items: start;
+        display: none;
+    }
+
+    .menu .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .left a, .menu .right a, .menu .right span {
+        padding-bottom: 5px;
+    }
+
+    a.Logout {
+        float: left;
+        margin-left: 5px;
+    }
+
+    footer {
+        margin-top: 110%;
+    }
+}

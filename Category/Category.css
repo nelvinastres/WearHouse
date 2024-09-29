@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 239, 238);
+    font-family: Nunito;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 10px;
+}
+
+header .menu {
+    display: flex;
+    width: 95%;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .left a, .menu .right span {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+a.Logout {
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 70px 10px 10px;
+    float: right;
+    background-color: white;
+    margin-right: 20px;
+    display: none;
+}
+
+.menu .left a:hover, a.Logout:hover, .menu .right span {
+    color: black;
+}
+
+.burger {
+    position: fixed;
+    left: 93%;
+    top: 2%;
+    display: none;
+}
+
+.burger .line {
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+/*  */
+h1 {
+    margin-left: 5%;
+    padding: 30px 0px;
+}
+/*  */
+button.addcategory {
+    font-size: 14px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgb(30, 120, 184);
+    border-radius: 5px;
+    background-color: rgb(30, 120, 184);
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.container2 {
+    background-color: white;
+    width: 30%;
+    height: 220px;
+    margin: 15% auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.container2 .closebutt {
+    font-size: 30px;
+    float: right;
+    padding: 5px 12px;
+}
+
+.container2 .closebutt:hover {
+    cursor: pointer;
+}
+
+.container2 .title {
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+.container2 form {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 form label {
+    font-size: 14px;
+}
+
+.container2 form input {
+    margin: 5px 0px;
+    width: 100%;
+    height: 27px;
+}
+
+.container2 .submit {
+    float: right;
+    margin: 10px 15px;
+    background-color: green;
+    width: 65px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.popup2 .container2 {
+    background-color: white;
+    width: 30%;
+    height: 220px;
+    margin: 15% auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.popup2 .container2 .closebutt2 {
+    font-size: 30px;
+    float: right;
+    padding: 5px 12px;
+}
+
+.popup2 .container2 .closebutt2:hover {
+    cursor: pointer;
+}
+
+.popup2 .container2 .title2 {
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+.popup2 .container2 form {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup2 .container2 form label {
+    font-size: 14px;
+}
+
+.popup2 .container2 form input {
+    margin: 5px 0px;
+    width: 100%;
+    height: 27px;
+}
+
+.popup2 .container2 .submit {
+    float: right;
+    margin: 10px 15px;
+    background-color: green;
+    width: 65px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.popup3 .container2 {
+    background-color: white;
+    width: 30%;
+    height: 220px;
+    margin: 15% auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.popup3 .container2 .closebutt3 {
+    font-size: 30px;
+    float: right;
+    padding: 5px 12px;
+}
+
+.popup3 .container2 .closebutt3:hover {
+    cursor: pointer;
+}
+
+.popup3 .container2 .title3 {
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+.popup3 .container2 p.warning {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.popup3 .container2 .submit {
+    float: right;
+    margin: 10px 15px;
+    background-color: rgb(225, 27, 27);
+    width: 65px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*  */
+.container {
+    margin-left: 5%;
+    padding: 10px 0px;
+    height: 400px;
+}
+
+table {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.container table thead, .container table tbody tr.tr2  {
+    background-color: white;
+}
+
+.container table thead tr th, .container table tbody tr td {
+    padding: 10px;
+}
+
+tbody tr td button.editcategory {
+    font-size: 14px;
+    color: white;
+    width: 50px;
+    height: 35px;
+    border: 1px solid rgb(237, 180, 47);
+    border-radius: 5px;
+    background-color: rgb(237, 180, 47);
+    cursor: pointer;
+}
+
+tbody tr td button.deletecategory {
+    font-size: 14px;
+    color: white;
+    width: 60px;
+    height: 35px;
+    border: 1px solid rgb(236, 64, 64);
+    border-radius: 5px;
+    background-color: rgb(236, 64, 64);
+    cursor: pointer;
+}
+/*  */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+footer .sosmed {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .sosmed a {
+    padding: 0px 5px;
+}
+
+footer .sosmed a img.twitter, a img.insta {
+    width: 16px;
+}
+
+a img.facebook {
+    width: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .burger {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .menu {
+        flex-direction: column;
+        align-items: start;
+        display: none;
+    }
+
+    .menu .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .left a, .menu .right a, .menu .right span {
+        padding-bottom: 5px;
+    }
+
+    a.Logout {
+        float: left;
+        margin-left: 5px;
+    }
+
+    .container {
+        height: 600px;
+    }
+
+    .popup .container2 {
+        margin: 50% auto;
+        width: 50%;
+    }
+
+    .popup2 .container2 {
+        margin: 50% auto;
+        width: 50%;
+    }
+
+    .popup3 .container2 {
+        margin: 50% auto;
+        width: 60%;
+    }
+}

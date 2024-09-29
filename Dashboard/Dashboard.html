@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">WearHouse</div>
+        <div class="menu" id="responsive">
+            <div class="left">
+                <a href="../Category/Category.html">Category</a>
+                <a href="../About Us/About Us.html">About Us</a>
+            </div>
+            <div class="right">
+                <span onclick="show()">&#9207;</span>
+            </div>
+        </div>
+        <div class="burger" onclick="myheader()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <a href="../Login.html" class="Logout" id="logout">Logout</a>
+
+    <div class="dashboard">
+        <p class="title">Dashboard</p>
+        <p class="desc">You are logged in!</p>
+    </div>
+
+    <footer>
+        <div class="sosmed">
+            <a href="#" onclick="opentwitter()"><img src="../Assets/twitter.jpg" alt="" class="twitter"></a>
+            <a href="#" onclick="openfb()"><img src="../Assets/facebook.png" alt="" class="facebook"></a>
+            <a href="#" onclick="openig()"><img src="../Assets/insta.png" alt="" class="insta"></a>
+        </div>
+        <p>Copyright &copy; 2021 Nelvina Patricia. All Rights Reserved</p>
+    </footer>
+</body>
+<script src="Dashboard.js"></script>
+</html>

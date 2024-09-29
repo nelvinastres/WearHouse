@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 239, 238);
+    font-family: Nunito;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 10px;
+}
+
+header .menu {
+    display: flex;
+    width: 95%;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .left a, .menu .right a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.menu .left a:hover, .menu .right a:hover {
+    color: black;
+}
+
+.burger {
+    position: fixed;
+    left: 93%;
+    top: 2%;
+    display: none;
+}
+
+.burger .line {
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+/*  */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 65%;
+    margin: auto;
+}
+
+.data p {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(216, 230, 229);
+}
+
+.data form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px;
+}
+
+.data form .data1, .data form .data2, .data form .data3, .data form .data4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data form .data1 label {
+    padding-right: 20px;
+    padding-left: 75px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.data form .data1 input {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(216, 230, 229);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.data form .data2 label {
+    padding-right: 20px;
+    padding-left: 22px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.data form .data2 input {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(216, 230, 229);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.data form .data3 label {
+    padding-right: 20px;
+    padding-left: 50px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.data form .data3 input {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(216, 230, 229);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.data form .data4 label {
+    padding-right: 20px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.data form .data4 input {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(216, 230, 229);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.data form .cekbox {
+    font-size: 12px;
+    margin-left: 24%;
+    display: flex;
+    padding-left: 30px;
+}
+
+.data form .cekbox input {
+    width: 15px;
+    height: 15px;
+}
+
+.data form .cekbox label {
+    align-self: center;
+    padding-left: 5px;
+}
+
+.data form .button {
+    margin-left: 30%;
+    display: flex;
+}
+
+.data form .button button {
+    font-size: 14px;
+    color: white;
+    width: 75px;
+    height: 40px;
+    border: 1px solid rgb(30, 120, 184);
+    border-radius: 5px;
+    background-color: rgb(30, 120, 184);
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.container2 {
+    background-color: white;
+    width: 30%;
+    height: 220px;
+    margin: 15% auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.container2 .closebutt {
+    font-size: 30px;
+    float: right;
+    padding: 5px 12px;
+}
+
+.container2 .closebutt:hover {
+    cursor: pointer;
+}
+
+.container2 .desc {
+    padding: 15px 15px;
+    font-size: 14px;
+}
+
+/*  */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+footer .sosmed {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .sosmed a {
+    padding: 0px 5px;
+}
+
+footer .sosmed a img.twitter, a img.insta {
+    width: 16px;
+}
+
+a img.facebook {
+    width: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .burger {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .menu {
+        flex-direction: column;
+        align-items: start;
+        display: none;
+    }
+
+    .menu .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .left a, .menu .right a {
+        padding-bottom: 5px;
+    }
+
+    .container {
+        height: 800px;
+    }
+
+    .data {
+        width: 80%;
+    }
+
+    .data form .data1 label, .data form .data2 label, .data form .data3 label {
+        padding-left: 0px;
+    }
+
+    .data form .data1 input, .data form .data2 input, .data form .data3 input, .data form .data4 input {
+        width: 255px;
+    }
+
+    .data form .cekbox {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .data form .button {
+        margin: 0px;
+    }
+}

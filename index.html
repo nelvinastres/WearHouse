@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">WearHouse</div>
+        <div class="menu">
+            <div class="left">
+                <a href="Login.html">Category</a>
+                <a href="Login.html">About Us</a>
+            </div>
+            <div class="right">
+                <a href="Login.html">Login</a>
+                <a href="Register/Register.html">Register</a>
+            </div>
+        </div>
+        <div class="menu-respon" id="responsive">
+            <div class="left">
+                <a href="Login.html">Category</a>
+                <a href="Login.html">About Us</a>
+            </div>
+            <div class="right">
+                <a href="Login.html">Login</a>
+                <a href="Register/Register.html">Register</a>
+            </div>
+        </div>
+        <div class="burger" onclick="myheader()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="data">
+            <p>Login</p>
+            <form method="post">
+                <div class="data1">
+                    <label for="Email Address">Email Address </label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <br>
+                <div class="data2">
+                    <label for="Password">Password </label>
+                    <input type="text" name="pass" id="pass">
+                </div>
+                <br>
+                <div class="cekbox">
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    <label for="rememberme">Remember Me</label>
+                </div>
+                <br>
+                <div class="button">
+                    <button type="button" class="login" onclick="validating()">Login</button>
+                    <a href="#">Forgot Your Password?</a>
+                    <div class="popup" id="popup">
+                        <div class="container2">
+                            <span class="closebutt">&times;</span>
+                            <p class="desc">Your account doesn't exist, please try again or register if you haven't make an account</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sosmed">
+            <a href="#" onclick="opentwitter()"><img src="Assets/twitter.jpg" alt="" class="twitter"></a>
+            <a href="#" onclick="openfb()"><img src="Assets/facebook.png" alt="" class="facebook"></a>
+            <a href="#" onclick="openig()"><img src="Assets/insta.png" alt="" class="insta"></a>
+        </div>
+        <p>Copyright &copy; 2021 Nelvina Patricia. All Rights Reserved</p>
+    </footer>
+</body>
+<script src="Login.js"></script>
+</html>
